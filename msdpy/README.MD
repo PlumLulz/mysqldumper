@@ -1,6 +1,6 @@
 # PHP/Python MySQL Dumper
 
-This is a MySQL Dumper that uses a Python console to interact with the PHP file. This script also uses gevent to create a pool of workers to dump the database in chunks to increase the speed. As of December 2022 this project was updated.
+This is a MySQL Dumper that uses a Python console to interact with a PHP file uploaded to a target site. This script also uses gevent to create a pool of workers to dump the database in chunks to increase the speed. As of December 2022 this project was updated.
 
 ## Speed Comparison
 These tests were done on the same host with the same 2GB and 5.3GB databases. Times are taken from the start to the end of file compression. 
