@@ -3,15 +3,14 @@
 This is a MySQL Dumper that uses a Python console to interact with a PHP file uploaded to a target site. This script also uses gevent to create a pool of workers to dump the database in chunks to increase the speed. As of December 2022 this project was updated.
 
 ## Speed Comparison
-Because every server and database are different your results may vary. Here are some speed comparisons for multiple different databases. Some of these tests were locally and others were from remote servers. Times are from start of database dump
-to end of file compression. As I obtain more comparisons I will update this table. 
+Because every server and database are different your results may vary. Here are some speed comparisons for multiple different databases. Some of these tests were done locally and others were from remote servers. Times are from start of database dump to end of file compression. As I obtain more comparisons I will update this table. 
 
-| Name | Database Size | MSD2.2 Speed | MSDpy Speed |
-| --- | --- | --- | --- |
-| database1 | 2GB | 3m:19s | 1m:10 |
-| database2 | 5.3GB | 13m:46s | 5m:53 |
-| database3 | 7.33GB | *2h:30m+ | 36m:40 |
-| database4 | 1.84GB | 12m:00s | 7m:44s |
+| Name | Database Size | MSD2.2 Speed | MSDpy Speed | Speed Difference |
+| --- | --- | --- | --- | --- |
+| database1 | 2GB | 3m:19s | 1m:10 | ~65% |
+| database2 | 5.3GB | 13m:46s | 5m:53 | ~57% |
+| database3 | 7.33GB | *2h:30m+ | 36m:40 | N/A |
+| database4 | 1.84GB | 12m:00s | 7m:44s | ~35%
 
 \* = Server went down near the end of dump so there was still time to go. 
 
