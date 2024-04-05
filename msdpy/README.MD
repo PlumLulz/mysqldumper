@@ -7,7 +7,7 @@ Because every server and database are different your results may vary. Here are 
 to end of file compression. As I obtain more comparisons I will update this table. 
 
 | Name | Database Size | MSD2.2 Speed | MSDpy Speed |
-| --- | --- | --- | --- | --- | --- |
+| --- | --- | --- | --- |
 | database1 | 2GB | 3m:19s | 1m:10 |
 | database2 | 5.3GB | 13m:46s | 5m:53 |
 | database3 | 7.33GB | *2h:30m+ | 36m:40 |
