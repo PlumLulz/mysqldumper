@@ -12,6 +12,7 @@ to end of file compression. As I obtain more comparisons I will update this tabl
 | database2 | 5.3GB | 13m:46s | 5m:53 |
 | database3 | 7.33GB | *2h:30m+ | 36m:40 |
 | database4 | 1.84GB | 12m:00s | 7m:44s |
+
 \* = Server went down near the end of dump so there was still time to go. 
 
 Usage:
