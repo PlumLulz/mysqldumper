@@ -1,6 +1,6 @@
-# PHP/Python MySQL Dumper
+# Python/PHP MySQL Dumper
 
-This is a MySQL Dumper that uses a Python console to interact with a PHP file uploaded to a target site. This script also uses gevent to create a pool of workers to dump the database in chunks to increase the speed. As of December 2022 this project was updated.
+This is a MySQL Dumper that uses a Python console to interact with a PHP file uploaded to a target site. This script uses gevent to create a pool of workers to concurrently dump multiple chunks of the database. Once all the chunks have been dumped they will be compressed in the correct order to get the final database. Greatly increasing the dump speed in most scenarios. You also have the ability to view databases/tables, dump single tables, and excute MySQL queries. As of December 2022 this project was updated.
 
 ## Speed Comparison
 Because every server and database are different your results may vary. Here are some speed comparisons for multiple different databases. Some of these tests were done locally and others were from remote servers. Times are from start of database dump to end of file compression. As I obtain more comparisons I will update this table. 
@@ -20,7 +20,7 @@ Upload the mysqlpy.php file to the target then run the Python script with the co
 python3 mysql.py http://localhost/mysqlpy.php lol localhost root root 3306
 
 Main screen and help command.
-![msdpy](https://i.imgur.com/OWpo7XE.png)
+![msdpy](https://i.imgur.com/vxnwYE8.png)
 
 Show databases command with -size flag.
 ![msdpy](https://i.imgur.com/TnCKt8a.png)
