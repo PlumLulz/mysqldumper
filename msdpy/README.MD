@@ -7,9 +7,9 @@ Because every server and database are different your results may vary. Here are 
 
 | Name | Database Size | MSD2.2 Speed | MSDpy Speed | Speed Difference |
 | --- | --- | --- | --- | --- |
-| database1 | 2GB | 3m:19s | 1m:10 | ~65% |
-| database2 | 5.3GB | 13m:46s | 5m:53 | ~57% |
-| database3 | 7.33GB | *2h:30m+ | 36m:40 | N/A |
+| database1 | 2GB | 3m:19s | 1m:10s | ~65% |
+| database2 | 5.3GB | 13m:46s | 5m:53s | ~57% |
+| database3 | 7.33GB | *2h:30m+ | 36m:40s | N/A |
 | database4 | 1.84GB | 12m:00s | 7m:44s | ~35%
 
 \* = Server went down near the end of dump so there was still time to go. 
